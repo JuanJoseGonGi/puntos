@@ -8,5 +8,6 @@
 !.config/
 .config/*
 !.config/nvim/
+!.config/nushell/
 !.config/starship.toml
 
