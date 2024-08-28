@@ -1,0 +1,12 @@
+# Ignore all
+/*
+
+# Avoid ignore
+!.gitignore
+!.gitmodules
+
+!.config/
+.config/*
+!.config/nvim/
+!.config/starship.toml
+
