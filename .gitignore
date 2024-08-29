@@ -1,13 +1,19 @@
-# Ignore all
-/*
+# Ignore everything
+*
 
-# Avoid ignore
+# But not these files...
 !.gitignore
 !.gitmodules
 
+# ...and not these directories...
 !.config/
-.config/*
+
+# Allow specific directories within .config
 !.config/nvim/
 !.config/nushell/
+
+# Allow specific file within .config
 !.config/starship.toml
 
+# Re-ignore everything else in .config
+.config/*
