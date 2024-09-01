@@ -1,6 +1,8 @@
 [submodule ".config/nushell"]
 	path = .config/nushell
 	url = git@github.com:JuanJoseGonGi/nushell.git
+    branch = main
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:JuanJoseGonGi/nvim.git
+    branch = main
