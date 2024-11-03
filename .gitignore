@@ -11,6 +11,7 @@
 # Allow specific directories within .config
 !.config/nvim/
 !.config/nushell/
+!.config/mods/
 
 # Allow specific file within .config
 !.config/starship.toml
