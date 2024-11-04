@@ -60,7 +60,7 @@ apis:
     models:
       llama-3.2-3b-instruct@q8_0:
         aliases: ["qf-llama"]
-        max-input-chars: 392000
+        max-input-chars: 13884
   openai:
     base-url: https://api.openai.com/v1
     api-key:
