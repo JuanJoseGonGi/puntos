@@ -18,3 +18,5 @@
 
 # Re-ignore everything else in .config
 .config/*
+!AGENTS.md
+!CLAUDE.md
