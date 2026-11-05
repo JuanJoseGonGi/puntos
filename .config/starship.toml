@@ -1,13 +1,27 @@
 add_newline = true
 
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[os]
+disabled = false
+
 [aws]
-symbol = "  "
+symbol = " "
 
 [buf]
 symbol = " "
 
+[bun]
+symbol = " "
+
 [c]
 symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
 
 [conda]
 symbol = " "
@@ -17,6 +31,9 @@ symbol = " "
 
 [dart]
 symbol = " "
+
+[deno]
+symbol = " "
 
 [directory]
 read_only = " 󰌾"
@@ -33,14 +50,26 @@ symbol = " "
 [fennel]
 symbol = " "
 
+[fortran]
+symbol = " "
+
 [fossil_branch]
 symbol = " "
+
+[gcloud]
+symbol = " "
 
 [git_branch]
 symbol = " "
 
+[git_commit]
+tag_symbol = '  '
+
 [golang]
 symbol = " "
+
+[gradle]
+symbol = " "
 
 [guix_shell]
 symbol = " "
@@ -87,16 +116,16 @@ symbol = " "
 [ocaml]
 symbol = " "
 
-[os]
-disabled = false
 [os.symbols]
 Alpaquita = " "
 Alpine = " "
 AlmaLinux = " "
 Amazon = " "
 Android = " "
+AOSC = " "
 Arch = " "
 Artix = " "
+CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
@@ -118,6 +147,7 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
+Nobara = " "
 OpenBSD = "󰈺 "
 openSUSE = " "
 OracleLinux = "󰌷 "
@@ -146,6 +176,9 @@ symbol = " "
 [pijul_channel]
 symbol = " "
 
+[pixi]
+symbol = "󰏗 "
+
 [python]
 symbol = " "
 
@@ -156,13 +189,20 @@ symbol = "󰟔 "
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = "󱘗 "
 
 [scala]
 symbol = " "
 
+[status]
+symbol = " "
+
 [swift]
 symbol = " "
 
+[xmake]
+symbol = " "
+
 [zig]
 symbol = " "
+

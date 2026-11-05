@@ -1,13 +1,23 @@
-# Global agent instructions
-
+- Reproduce the bug end to end, as the user would hit it, before touching the code.
+- Form several hypotheses and eliminate them with runtime evidence from the real running system, ideally one fact that can't be argued; ship only what the surviving cause justifies.
+- Name the invariant a failure breaks, not just the instance: one root class (e.g. "an attempted action is treated as completed") explains and fixes many symptoms at once.
+- Before judging a system, confirm the thing you are judging is the thing that runs: the running process, binary, config and session match the release you think you fixed.
+- Don't ask a broken tool to repair itself: fix it from outside, coordinating with whoever owns it, then hand control back.
+- Reproduce the bug first. What proves it works are the tests a human names or the end-to-end tests of the real path, never the ones the agent writes for itself.
+- Inspect the blast radius outside the diff, and prove the fact the change is safe because of.
+- Compare 2–3 alternatives before choosing one when there's no established pattern.
+- Capture the real product before and after, and show that evidence instead of claiming it works.
+- Turn every correction into structure: architecture first, then a lint or test, then a skill or rule.
 - When making technical decisions, do not give much weight to development cost. Instead, prefer quality, simplicity, robustness, scalability, and long term maintainability.
 - For one-off or infrequent operational work, start with the simplest direct end-to-end path. Do not build wrappers, control planes, policy layers, custom verifiers, or automation unless the direct path exposes a concrete blocker or repeated need that justifies the added machinery.
-- When doing bug fixes, always start with reproducing the bug in an E2E setting as closely aligned with how an end user would experience it as possible. This makes sure you find the real problem so your fix will actually solve it.
 - When end-to-end testing a product, be picky about the UI you see and be obsessed with pixel perfection. If something clearly looks off, even if it is not directly related to what you are doing, try to get it fixed along the way.
 - Apply that same high standard to engineering excellence: lint, test failures, and test flakiness. If you see one, even if it is not caused by what you are working on right now, still get it fixed.
 - Use early returns so the code is more readable.
 - Tautological tests considered harmful.
-- A change that touches several files or will outlast one session goes through `research-plan-implement`; a diff that fits in one sentence does not.
+- A change that touches several files or will outlast one session goes through `research-plan-implement` skill; a diff that fits in one sentence does not.
+- Cut taglines, helper text and secondary labels. If a screen needs them to make sense, fix the layout.
+- Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent experience (AX) always, without breaking anything.
+- Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, likelihood, and complexity cost to the user and get their buy-in. Do not silently expand scope for theoretical robustness.
 
 <!-- CODEGRAPH_START -->
 ## CodeGraph
