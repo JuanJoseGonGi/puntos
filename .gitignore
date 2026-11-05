@@ -16,7 +16,5 @@
 # Allow specific file within .config
 !.config/starship.toml
 
-# Re-ignore everything else in .config
-.config/*
 !AGENTS.md
 !CLAUDE.md
